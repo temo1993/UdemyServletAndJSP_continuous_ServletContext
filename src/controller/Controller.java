@@ -33,5 +33,8 @@ public class Controller extends HttpServlet{
 
         PrintWriter out = resp.getWriter();
         out.println("Hits: " + hits);
+
+        String adminName = context.getInitParameter("adminName");
+        out.println("Parameter value: " + adminName);
     }
 }
